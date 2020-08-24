@@ -50,10 +50,8 @@ namespace IMG2GifBot.Modules
                         await Context.Channel.SendFileAsync(fullPath);
 
                     }
-                    else
-                    {
-                        ReplyAsync("I could not convert that shit.");
-                    }
+               
+
                     File.Delete(fullPath);
 
                     await Context.Message.DeleteAsync();
